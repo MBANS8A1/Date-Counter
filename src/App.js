@@ -54,7 +54,7 @@ function Counter() {
             ? "Today is "
             : count > 0
             ? `${count} day(s) from today is `
-            : `${count} day(s) ago was `}
+            : `${Math.abs(count)} day(s) ago was `}
         </span>
         <span>
           {new Date(

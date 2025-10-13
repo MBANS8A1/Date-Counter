@@ -49,11 +49,14 @@ function Counter() {
       </div>
 
       <p className="outputText">
-        {count} days from today is &nbsp;
+        {count === 0
+          ? "Today is "
+          : count > 0
+          ? `${count} day(s) from today is `
+          : `${count} day(s) ago was `}
         {new Date(
           currentDate.setDate(currentDate.getDate() + count)
         ).toDateString()}
-        .
       </p>
     </div>
   );

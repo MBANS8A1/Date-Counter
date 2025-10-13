@@ -14,7 +14,7 @@
   width: 40px;
   height: 40px;
   border: 3px solid black;
-  margin: 2px 0px 25px 0px;
+  margin: 2px 0px 35px 0px;
   padding: 2px;
   border-radius: 3px;
 }
@@ -22,7 +22,12 @@
 .labelText {
   display: inline;
   font-size: 25px;
-  margin: 2px 30px 25px 30px;
+  margin: 2px 30px 35px 30px;
   cursor: pointer;
   vertical-align: center;
+}
+
+.outputText {
+  text-align: center;
+  font-size: 25px;
 }

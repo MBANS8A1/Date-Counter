@@ -13,7 +13,7 @@ export default App;
 function Counter() {
   const [step, setStep] = useState(1);
   const [count, setCount] = useState(0);
-
+  const currentDate = new Date().toDateString();
   return (
     <div>
       <div>
@@ -26,6 +26,10 @@ function Counter() {
         <p className="labelText">Count: {count}</p>
         <button className="numButtons">+</button>
       </div>
+
+      <p className="outputText">
+        {count} days from today is {currentDate}
+      </p>
     </div>
   );
 }

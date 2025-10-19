@@ -32,14 +32,15 @@ function Counter() {
     <div>
       <div>
         {/*A place for the step slider */}
+        <input
+          type="range"
+          min="0"
+          max="10"
+          value={step}
+          onChange={(e) => setStep(e.target.value)}
+        />
 
-        <button className="numButtons" onClick={decreaseStep}>
-          -
-        </button>
         <p className="labelText">Step: {step}</p>
-        <button className="numButtons" onClick={increaseStep}>
-          +
-        </button>
       </div>
       <div>
         <button className="numButtons" onClick={decreaseCount}>

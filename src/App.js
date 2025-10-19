@@ -31,6 +31,8 @@ function Counter() {
   return (
     <div>
       <div>
+        {/*A place for the step slider */}
+
         <button className="numButtons" onClick={decreaseStep}>
           -
         </button>

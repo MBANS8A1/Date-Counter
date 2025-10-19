@@ -11,13 +11,22 @@
 }
 
 .numButtons {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 3px solid black;
   margin: 2px 0px 35px 0px;
   padding: 2px;
   border-radius: 3px;
   cursor: pointer;
+}
+.rangeContainer {
+  margin-left: 33px;
+  margin-bottom: 15px;
+}
+
+#countField {
+  height: 30px;
+  margin: 15px 0px 35px 0px;
 }
 
 .labelText {

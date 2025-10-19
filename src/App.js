@@ -16,6 +16,11 @@ function Counter() {
   const currentDate = new Date();
   currentDate.setDate(currentDate.getDate() + count);
 
+  function handleReset() {
+    setCount(0);
+    setStep(1);
+  }
+
   function increaseCount() {
     setCount((c) => c + step);
   }
@@ -66,6 +71,9 @@ function Counter() {
         </span>
         <span>{currentDate.toDateString()}</span>
       </p>
+      <div>
+        <button onClick={handleReset}>Reset</button>
+      </div>
     </div>
   );
 }

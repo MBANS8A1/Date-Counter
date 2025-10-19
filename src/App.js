@@ -37,7 +37,7 @@ function Counter() {
           min="0"
           max="10"
           value={step}
-          onChange={(e) => setStep(e.target.value)}
+          onChange={(e) => setStep(Number(e.target.value))}
         />
 
         <p className="labelText">Step: {step}</p>
